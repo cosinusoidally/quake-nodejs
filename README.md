@@ -7,14 +7,14 @@ Prebuilt copy lives in ``build`` directory. In order to run you will first have 
 
 ## Building
 
-To build you will need Emscripten 1.27.2 (other versions may work, but this is the version I tested). This has been tested against node.js 4.8.3 (though other versions should work). Grab a copy of ``pak0.pak`` and put in inside a directory called ``id1`` in this directory. To build a fresh copy run ``./mk`` in this directory (make sure you run from this dir, the ``./mk`` script will probably badly misbehave if run  from somewhere else, you have been warned). The built copy should then be in ``build``
+To build you will need Emscripten 1.27.0 (other versions may work, but this is the version I tested). This has been tested against node.js 4.8.3 (though other versions should work). Grab a copy of ``pak0.pak`` and put in inside a directory called ``id1`` in this directory. To build a fresh copy run ``./mk`` in this directory (make sure you run from this dir, the ``./mk`` script will probably badly misbehave if run  from somewhere else, you have been warned). The built copy should then be in ``build``
 
 ## Setting Up Emscripten
 
 In theory this project will work with most versions of Emscritpen. Having said that, for the greatest chance of success you can mirror my setup:
 
 * Ubuntu 14.04 x86_64
-* Emscripten 1.27.2 (in non-fastcomp mode, see instructions below)
+* Emscripten 1.27.0 (in non-fastcomp mode, see instructions below)
 * Node.js 4.8.3
 * LLVM/Clang 3.3 from http://releases.llvm.org/
 
@@ -24,7 +24,7 @@ Git clone Emscripten and check out the correct version:
 
 ```
 git clone https://github.com/kripken/emscripten.git
-git checkout 1.27.2
+git checkout 1.27.0
 ```
 
 Get node.js 4.8.3
