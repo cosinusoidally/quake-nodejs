@@ -71,7 +71,7 @@ var server = http.createServer(function (request, response) {
     if(request.url=== "/control_down"){
        
        request.on("data",function(a){
-          console.log("down: "+a.toString())
+//          console.log("down: "+a.toString())
           _Key_Event(parseInt(a.toString()),1);
        });
        response.end("blah");
@@ -79,7 +79,7 @@ var server = http.createServer(function (request, response) {
     if(request.url=== "/control_up"){
        
        request.on("data",function(a){
-            console.log("up: "+a.toString())
+//            console.log("up: "+a.toString())
             _Key_Event(parseInt(a.toString()),0);
 
        });
