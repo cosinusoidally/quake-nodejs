@@ -13,7 +13,7 @@ To build you will need Emscripten 1.27.0 (other versions may work, but this is t
 
 In theory this project will work with most versions of Emscritpen. Having said that, for the greatest chance of success you can mirror my setup:
 
-* Ubuntu 14.04 x86_64
+* Ubuntu 14.04 x86_64 (not a strict requirement, any version of Linux with Python 2.7 should work)
 * Emscripten 1.27.0 (in non-fastcomp mode, see instructions below)
 * Node.js 4.8.3
 * LLVM/Clang 3.3 from http://releases.llvm.org/
