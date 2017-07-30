@@ -7,7 +7,7 @@ Prebuilt copy lives in ``build`` directory. In order to run you will first have 
 
 ## Building
 
-To build you will need Emscripten 1.27.0 (other versions may work, but this is the version I tested). This has been tested against node.js 4.8.3 (though other versions should work). Grab a copy of ``pak0.pak`` and put in inside a directory called ``id1`` in this directory. To build a fresh copy run ``./mk`` in this directory (make sure you run from this dir, the ``./mk`` script will probably badly misbehave if run  from somewhere else, you have been warned). The built copy should then be in ``build``
+To build you will need Emscripten 1.27.0 (other versions may work, but this is the version I tested). Yep, that's a very old version of Emscripten (from 2014, and I did this project in July 2017) but there is a good reason for this (short version of that story is so that you don't end up having to build LLVM/Clang from source if you are on Linux). This has been tested against node.js 4.8.3 (though other versions should work). Grab a copy of ``pak0.pak`` and put in inside a directory called ``id1`` in this directory. To build a fresh copy run ``./mk`` in this directory (make sure you run from this dir, the ``./mk`` script will probably badly misbehave if run  from somewhere else, you have been warned). The built copy should then be in ``build``
 
 ## Setting Up Emscripten
 
