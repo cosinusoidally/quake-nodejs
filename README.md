@@ -1,5 +1,5 @@
 # quake-nodejs
-Quake 1 running on top of node.js using Emscripten
+Quake 1 running on top of node.js using Emscripten. Game engine runs entirely server side inside node.js. The game is played by connecting to the server using a simple client. The simple client retrieves video frames from the server and sends back keystrokes to the server. A HTML5 client is included from demonstration purposes.
 
 ## Running
 
@@ -11,14 +11,14 @@ To build you will need Emscripten 1.27.2 (other versions may work, but this is t
 
 ## Setting Up Emscripten
 
-In theory this project will work with most versions of Emscritpen. Having said that, for the greatest chance of sucess you can mirror my setup:
+In theory this project will work with most versions of Emscritpen. Having said that, for the greatest chance of success you can mirror my setup:
 
 * Ubuntu 14.04 x86_64
 * Emscripten 1.27.2 (in non-fastcomp mode, see instructions below)
 * Node.js 4.8.3
 * LLVM/Clang 3.3 from http://releases.llvm.org/
 
-### Getting prerequisties
+### Getting prerequisites
 
 Git clone Emscripten and check out the correct version:
 
@@ -46,11 +46,11 @@ tar xvf node-v4.8.3-linux-x64.tar.xz
 
 Get LLVM/Clang 3.3:
 ```
-wget http://releases.llvm.org/3.3/clang+llvm-3.3-amd64-debian6.tar.bz2
-wget http://releases.llvm.org/3.3/clang+llvm-3.3-amd64-debian6.tar.bz2.sig
+wget "http://releases.llvm.org/3.3/clang+llvm-3.3-amd64-debian6.tar.bz2"
+wget "http://releases.llvm.org/3.3/clang+llvm-3.3-amd64-debian6.tar.bz2.sig"
 gpg --verify clang+llvm-3.3-amd64-debian6.tar.bz2.sig
 ```
-If all that checks out then Extract LLVM/Clang
+If all that checks out then Extract LLVM/Clang with something like:
 ```
 tar xvf "clang+llvm-3.3-amd64-debian6.tar.bz2"
 ```
@@ -60,7 +60,7 @@ Next put Emscripten, node.js and Clang in your path. Descend in to each of the d
 Set emcc to run in non-fastcomp mode by running:
 
 ```
-export export EMCC_FAST_COMPILER=0
+export EMCC_FAST_COMPILER=0
 ```
 
 At this point you should now be able to build ``quake-nodejs`` using the ``Building`` instructions near the top of this README
