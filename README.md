@@ -9,7 +9,7 @@ Prebuilt copy lives in ``build`` directory. In order to run you will first have 
 
 To build you will need Emscripten 1.27.2 (other versions may work, but this is the version I tested). This has been tested against node.js 4.8.3 (though other versions should work). Grab a copy of ``pak0.pak`` and put in inside a directory called ``id1`` in this directory. To build a fresh copy run ``./mk`` in this directory (make sure you run from this dir, the ``./mk`` script will probably badly misbehave if run  from somewhere else, you have been warned). The built copy should then be in ``build``
 
-##License
+## License
 
 This project is licensed under the GPL (see gpl.txt in this directory). This project was based upon the Adobe Alchemy port of Quake 1 (https://github.com/mkr3142/QuakeFlash)
 
