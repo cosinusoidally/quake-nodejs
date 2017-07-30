@@ -1,5 +1,5 @@
 # quake-nodejs
-Quake 1 running on top of node.js using Emscripten. Game engine runs entirely server side inside node.js. The game is played by connecting to the server using a simple client. The simple client retrieves video frames from the server and sends back keystrokes to the server. A HTML5 client is included from demonstration purposes.
+Quake 1 running on top of node.js using Emscripten. Game engine runs entirely server side inside node.js. The game is played by connecting to the server using a simple client. The simple client retrieves video frames from the server and sends back keystrokes to the server. An example HTML5 client is included.
 
 ## Running
 
